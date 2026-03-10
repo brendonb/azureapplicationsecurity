@@ -36,6 +36,9 @@ This architecture ensures the HR application is not publicly exposed and is only
 
 
 <h2>Quick Video walk through</h2>
+<a href="https://youtu.be/ndxd70ljQdY">
+  <img src="https://i.imgur.com/m2V4ebF.png"/>
+</a>
  
 <h3>Challenges and constraints</h3>
 This lab was built using an Azure free-tier environment, which introduced some limitations that influenced the final implementation.
