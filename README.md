@@ -1,4 +1,4 @@
-# Azure application security
+# Azure application vpn security
 Demonstration of an end to end  secure internal HRM Application implementation
 <img src="https://i.imgur.com/bIY7wTE.png" height="80%" width="80%" />
 
