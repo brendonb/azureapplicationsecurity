@@ -7,7 +7,7 @@ Demonstration of an end to end  secure internal HRM Application implementation
 - <b>OrangeHRM Human Resources Application</b>
 - <b>SSL certification</b>
 - <b>Ubuntu Linux</b>
-- <b>Vnets, Subnets, VPNgateway, Network Security Groups</b>
+- <b>Vnets, Subnets, VPNgateway, Network Security Groups, VnetPeering</b>
 - <b>Bastion</b>
 - <b>Blob Storage</b>
 - <b>Entra ID</b>
