@@ -4,6 +4,18 @@ Demonstration of an end to end  secure internal HRM Application implementation
 
 <h2> Applications and Utilities Used</h2>
 
+- <b>OrangeHRM Human Resources Application</b>
+- <b>SSL certification</b>
+- <b>Ubuntu Linux</b>
+- <b>Vnets, Subnets, VPNgateway, Network Security Groups</b>
+- <b>Bastion</b>
+- <b>Blob Storage</b>
+- <b>Entra ID</b>
+- <b>MFA</b>
+- <b>Microsoft Defender</b>
+- <b>Microsoft Sentinel</b>
+- <b>Windows 10 VPN, AzureVPN client</b>
+
 <h2>Program walk-through:</h2>
 
 <h2>Quick Video walk through</h2>
