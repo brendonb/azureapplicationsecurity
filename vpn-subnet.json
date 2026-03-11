@@ -1,0 +1,94 @@
+{
+    "apiVersion": "2024-10-01",
+    "id": "/subscriptions/c4b26665-24f0-4f98-b9db-8093f17be90b/resourceGroups/rg-sec-lab/providers/Microsoft.Network/virtualNetworks/VPN-Subnet",
+    "name": "VPN-Subnet",
+    "type": "microsoft.network/virtualnetworks",
+    "location": "eastus",
+    "tags": {},
+    "properties": {
+        "provisioningState": "Succeeded",
+        "resourceGuid": "1bbb2df4-8d1f-43eb-8acf-d84505b92692",
+        "addressSpace": {
+            "addressPrefixes": [
+                "10.1.0.0/16"
+            ]
+        },
+        "privateEndpointVNetPolicies": "Disabled",
+        "subnets": [
+            {
+                "name": "default",
+                "id": "/subscriptions/c4b26665-24f0-4f98-b9db-8093f17be90b/resourceGroups/rg-sec-lab/providers/Microsoft.Network/virtualNetworks/VPN-Subnet/subnets/default",
+                "etag": "W/\"7f1810ff-2562-4948-92a4-c5e9a83e203b\"",
+                "properties": {
+                    "provisioningState": "Succeeded",
+                    "addressPrefix": "10.1.0.0/24",
+                    "delegations": [],
+                    "privateEndpointNetworkPolicies": "Disabled",
+                    "privateLinkServiceNetworkPolicies": "Enabled"
+                },
+                "type": "Microsoft.Network/virtualNetworks/subnets"
+            },
+            {
+                "name": "GatewaySubnet",
+                "id": "/subscriptions/c4b26665-24f0-4f98-b9db-8093f17be90b/resourceGroups/rg-sec-lab/providers/Microsoft.Network/virtualNetworks/VPN-Subnet/subnets/GatewaySubnet",
+                "etag": "W/\"7f1810ff-2562-4948-92a4-c5e9a83e203b\"",
+                "properties": {
+                    "provisioningState": "Succeeded",
+                    "addressPrefix": "10.1.1.0/24",
+                    "ipConfigurations": [
+                        {
+                            "id": "/subscriptions/13f22ba9-05c5-48de-8511-8fbaca5e06be/resourceGroups/ARMRG-9D060077-91A4-4145-AABD-E3D917F87E7E/PROVIDERS/MICROSOFT.COMPUTE/VIRTUALMACHINESCALESETS/VPNGW/VIRTUALMACHINES/0/NETWORKINTERFACES/CUSTNIC/ipConfigurations/IPCONFIG"
+                        },
+                        {
+                            "id": "/subscriptions/13f22ba9-05c5-48de-8511-8fbaca5e06be/resourceGroups/ARMRG-9D060077-91A4-4145-AABD-E3D917F87E7E/PROVIDERS/MICROSOFT.COMPUTE/VIRTUALMACHINESCALESETS/VPNGW/VIRTUALMACHINES/1/NETWORKINTERFACES/CUSTNIC/ipConfigurations/IPCONFIG"
+                        },
+                        {
+                            "id": "/subscriptions/c4b26665-24f0-4f98-b9db-8093f17be90b/resourceGroups/RG-SEC-LAB/providers/Microsoft.Network/virtualNetworkGateways/VPN-GATEWAY/ipConfigurations/DEFAULT"
+                        }
+                    ],
+                    "delegations": [],
+                    "privateEndpointNetworkPolicies": "Disabled",
+                    "privateLinkServiceNetworkPolicies": "Enabled"
+                },
+                "type": "Microsoft.Network/virtualNetworks/subnets"
+            }
+        ],
+        "virtualNetworkPeerings": [
+            {
+                "name": "VPN-To-AppNetwork",
+                "id": "/subscriptions/c4b26665-24f0-4f98-b9db-8093f17be90b/resourceGroups/rg-sec-lab/providers/Microsoft.Network/virtualNetworks/VPN-Subnet/virtualNetworkPeerings/VPN-To-AppNetwork",
+                "etag": "W/\"7f1810ff-2562-4948-92a4-c5e9a83e203b\"",
+                "properties": {
+                    "provisioningState": "Succeeded",
+                    "resourceGuid": "d4a43294-38d1-0c9c-19c2-92ea697aa440",
+                    "peeringState": "Connected",
+                    "peeringSyncLevel": "FullyInSync",
+                    "remoteVirtualNetwork": {
+                        "id": "/subscriptions/c4b26665-24f0-4f98-b9db-8093f17be90b/resourceGroups/rg-sec-lab/providers/Microsoft.Network/virtualNetworks/vnet-sec-lab"
+                    },
+                    "allowVirtualNetworkAccess": true,
+                    "allowForwardedTraffic": true,
+                    "allowGatewayTransit": true,
+                    "useRemoteGateways": false,
+                    "doNotVerifyRemoteGateways": false,
+                    "peerCompleteVnets": true,
+                    "enableOnlyIPv6Peering": false,
+                    "remoteAddressSpace": {
+                        "addressPrefixes": [
+                            "10.0.0.0/16"
+                        ]
+                    },
+                    "remoteVirtualNetworkAddressSpace": {
+                        "addressPrefixes": [
+                            "10.0.0.0/16"
+                        ]
+                    },
+                    "routeServiceVips": {}
+                },
+                "type": "Microsoft.Network/virtualNetworks/virtualNetworkPeerings"
+            }
+        ],
+        "enableDdosProtection": false
+    },
+    "etag": "W/\"7f1810ff-2562-4948-92a4-c5e9a83e203b\""
+}

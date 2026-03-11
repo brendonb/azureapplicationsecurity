@@ -1,0 +1,129 @@
+{
+    "apiVersion": "2025-04-01",
+    "id": "/subscriptions/c4b26665-24f0-4f98-b9db-8093f17be90b/resourceGroups/rg-sec-lab/providers/microsoft.compute/virtualMachines/hr-saas-app",
+    "name": "HR-SAAS-APP",
+    "type": "microsoft.compute/virtualmachines",
+    "location": "eastus",
+    "zones": [
+        "1"
+    ],
+    "identity": {
+        "type": "SystemAssigned",
+        "principalId": "ab19d135-418c-4d40-9ef4-cfb85c168a21",
+        "tenantId": "65f17511-4e86-45de-8185-19f5b861865b"
+    },
+    "properties": {
+        "hardwareProfile": {
+            "vmSize": "Standard_DC1ds_v3"
+        },
+        "provisioningState": "Succeeded",
+        "vmId": "b2f8cfa0-1b03-43a4-a9a0-a9d4e584e17f",
+        "additionalCapabilities": {
+            "hibernationEnabled": false
+        },
+        "storageProfile": {
+            "imageReference": {
+                "publisher": "canonical",
+                "offer": "ubuntu-24_04-lts",
+                "sku": "server",
+                "version": "latest",
+                "exactVersion": "24.04.202601300"
+            },
+            "osDisk": {
+                "osType": "Linux",
+                "name": "HR-SAAS-APP_OsDisk_1_e729666a97e04ebe9fab69199e9e9a6b",
+                "createOption": "FromImage",
+                "caching": "ReadWrite",
+                "managedDisk": {
+                    "id": "/subscriptions/c4b26665-24f0-4f98-b9db-8093f17be90b/resourceGroups/RG-SEC-LAB/providers/Microsoft.Compute/disks/HR-SAAS-APP_OsDisk_1_e729666a97e04ebe9fab69199e9e9a6b"
+                },
+                "deleteOption": "Delete"
+            },
+            "dataDisks": [],
+            "diskControllerType": "SCSI"
+        },
+        "osProfile": {
+            "computerName": "HR-SAAS-APP",
+            "adminUsername": "azureuser",
+            "linuxConfiguration": {
+                "disablePasswordAuthentication": true,
+                "ssh": {
+                    "publicKeys": [
+                        {
+                            "path": "/home/azureuser/.ssh/authorized_keys",
+                            "keyData": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDl8unyPOcnvsmLQ9WLUINMdVSFvzIalZzOQC3RD3uyn+n/igcMFVooQkerqpFyiJKRwA3PpPYbqPIOeIda0ePp5pxoHfbJpofPOlnFNuWlHWqgyZYNQHm+i98JdG3NSxVCx9CpcDtyjkzYcJNubk/ge4iejk8Pohj5DnH4MoiknJRK2LcIquRcwc0rLrOlR/Hx0tdKSwOjJtyzsqzA/oSrJrAfIAM7CK95YJvKTXzEEKu+yFWHJc3qt8ovLg5/bkDtg/zVaYu2jtK7nodrPn5X3JkQml/UVOPyQJrhhlSK0fyN1to1Ho9MgWboqzl2hsVcla/kMxR3Cpmye/Zo2wR6eKiD/LL7EznRUeEWpCPg9LFUU1eoa7NSaZHs7HUz85rcCqHPBEUDZ91b3goNM2+ZArhgB8m9GZCr0LfmeoALuRZ/42HExh0kGF+qy2i+CvN8SlqS7XUNThWteZrzlrG1r0eszO1mZLxPesP41rgQ+WBelqfX/qfC4sD+YzKS0Mk= generated-by-azure"
+                        }
+                    ]
+                },
+                "provisionVMAgent": true,
+                "patchSettings": {
+                    "patchMode": "ImageDefault",
+                    "assessmentMode": "ImageDefault"
+                }
+            },
+            "secrets": [],
+            "allowExtensionOperations": true,
+            "requireGuestProvisionSignal": true
+        },
+        "securityProfile": {
+            "uefiSettings": {
+                "secureBootEnabled": true,
+                "vTpmEnabled": true
+            },
+            "securityType": "TrustedLaunch"
+        },
+        "networkProfile": {
+            "networkInterfaces": [
+                {
+                    "id": "/subscriptions/c4b26665-24f0-4f98-b9db-8093f17be90b/resourceGroups/rg-sec-lab/providers/Microsoft.Network/networkInterfaces/hr-saas-app195_z1",
+                    "properties": {
+                        "deleteOption": "Delete"
+                    }
+                }
+            ]
+        },
+        "diagnosticsProfile": {
+            "bootDiagnostics": {
+                "enabled": true
+            }
+        },
+        "timeCreated": "2026-03-06T07:55:11.127Z"
+    },
+    "resources": [
+        {
+            "name": "AzureMonitorLinuxAgent",
+            "id": "/subscriptions/c4b26665-24f0-4f98-b9db-8093f17be90b/resourceGroups/rg-sec-lab/providers/Microsoft.Compute/virtualMachines/HR-SAAS-APP/extensions/AzureMonitorLinuxAgent",
+            "type": "Microsoft.Compute/virtualMachines/extensions",
+            "location": "eastus",
+            "properties": {
+                "autoUpgradeMinorVersion": true,
+                "provisioningState": "Succeeded",
+                "enableAutomaticUpgrade": true,
+                "publisher": "Microsoft.Azure.Monitor",
+                "type": "AzureMonitorLinuxAgent",
+                "typeHandlerVersion": "1.0"
+            }
+        },
+        {
+            "name": "MDE.Linux",
+            "id": "/subscriptions/c4b26665-24f0-4f98-b9db-8093f17be90b/resourceGroups/rg-sec-lab/providers/Microsoft.Compute/virtualMachines/HR-SAAS-APP/extensions/MDE.Linux",
+            "type": "Microsoft.Compute/virtualMachines/extensions",
+            "location": "eastus",
+            "properties": {
+                "autoUpgradeMinorVersion": true,
+                "forceUpdateTag": "41ae2f4f-6df3-4ea2-8eaf-8b3b8cf7ca4f",
+                "provisioningState": "Succeeded",
+                "publisher": "Microsoft.Azure.AzureDefenderForServers",
+                "type": "MDE.Linux",
+                "typeHandlerVersion": "1.0",
+                "settings": {
+                    "azureResourceId": "/subscriptions/c4b26665-24f0-4f98-b9db-8093f17be90b/resourceGroups/RG-SEC-LAB/providers/Microsoft.Compute/virtualMachines/HR-SAAS-APP",
+                    "forceReOnboarding": false,
+                    "vNextEnabled": false,
+                    "autoUpdate": true
+                }
+            }
+        }
+    ],
+    "etag": "\"19\""
+}

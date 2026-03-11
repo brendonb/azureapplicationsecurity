@@ -1,0 +1,114 @@
+{
+    "apiVersion": "2025-05-01",
+    "id": "/subscriptions/c4b26665-24f0-4f98-b9db-8093f17be90b/resourceGroups/rg-sec-lab/providers/Microsoft.Network/virtualNetworkGateways/VPN-Gateway",
+    "name": "VPN-Gateway",
+    "type": "microsoft.network/virtualnetworkgateways",
+    "location": "eastus",
+    "tags": {},
+    "properties": {
+        "provisioningState": "Succeeded",
+        "resourceGuid": "5920091f-4d9d-4cc2-8aa6-f26614486b5d",
+        "packetCaptureDiagnosticState": "None",
+        "enablePrivateIpAddress": false,
+        "isMigrateToCSES": false,
+        "isMigratedLegacySKU": false,
+        "blockUpgradeOfMigratedLegacyGateways": false,
+        "virtualNetworkGatewayMigrationStatus": {
+            "state": "None",
+            "phase": "None",
+            "errorMessage": ""
+        },
+        "ipConfigurations": [
+            {
+                "name": "default",
+                "id": "/subscriptions/c4b26665-24f0-4f98-b9db-8093f17be90b/resourceGroups/rg-sec-lab/providers/Microsoft.Network/virtualNetworkGateways/VPN-Gateway/ipConfigurations/default",
+                "etag": "W/\"16690b58-29aa-4f07-b58b-73e457e510ca\"",
+                "type": "Microsoft.Network/virtualNetworkGateways/ipConfigurations",
+                "properties": {
+                    "provisioningState": "Succeeded",
+                    "privateIPAllocationMethod": "Dynamic",
+                    "publicIPAddress": {
+                        "id": "/subscriptions/c4b26665-24f0-4f98-b9db-8093f17be90b/resourceGroups/rg-sec-lab/providers/Microsoft.Network/publicIPAddresses/vpn-hrm-pip"
+                    },
+                    "subnet": {
+                        "id": "/subscriptions/c4b26665-24f0-4f98-b9db-8093f17be90b/resourceGroups/rg-sec-lab/providers/Microsoft.Network/virtualNetworks/VPN-Subnet/subnets/GatewaySubnet"
+                    }
+                }
+            }
+        ],
+        "natRules": [],
+        "virtualNetworkGatewayPolicyGroups": [],
+        "enableBgpRouteTranslationForNat": false,
+        "disableIPSecReplayProtection": false,
+        "sku": {
+            "name": "VpnGw1AZ",
+            "tier": "VpnGw1AZ",
+            "capacity": 2
+        },
+        "gatewayType": "Vpn",
+        "vpnType": "RouteBased",
+        "enableBgp": false,
+        "enableHighBandwidthVpnGateway": false,
+        "activeActive": false,
+        "vpnClientConfiguration": {
+            "vpnClientAddressPool": {
+                "addressPrefixes": [
+                    "172.16.201.0/24"
+                ]
+            },
+            "vpnClientProtocols": [
+                "OpenVPN"
+            ],
+            "vpnAuthenticationTypes": [
+                "AAD"
+            ],
+            "vpnClientRootCertificates": [],
+            "vpnClientRevokedCertificates": [],
+            "vngClientConnectionConfigurations": [],
+            "vpnClientConnectionHealth": {
+                "vpnClientConnectionsCount": 1,
+                "allocatedIpAddresses": [
+                    "172.16.201.2"
+                ],
+                "totalIngressBytesTransferred": 200047,
+                "totalEgressBytesTransferred": 42989
+            },
+            "radiusServers": [],
+            "vpnClientIpsecPolicies": [],
+            "aadTenant": "https://login.microsoftonline.com/65f17511-4e86-45de-8185-19f5b861865b/",
+            "aadAudience": "41b23e61-6c1e-4545-b367-cd054e0ed4b4",
+            "aadIssuer": "https://sts.windows.net/65f17511-4e86-45de-8185-19f5b861865b/"
+        },
+        "bgpSettings": {
+            "asn": 65515,
+            "bgpPeeringAddress": "10.1.1.254",
+            "peerWeight": 0,
+            "bgpPeeringAddresses": [
+                {
+                    "ipconfigurationId": "/subscriptions/c4b26665-24f0-4f98-b9db-8093f17be90b/resourceGroups/rg-sec-lab/providers/Microsoft.Network/virtualNetworkGateways/VPN-Gateway/ipConfigurations/default",
+                    "defaultBgpIpAddresses": [
+                        "10.1.1.254"
+                    ],
+                    "customBgpIpAddresses": [],
+                    "tunnelIpAddresses": [
+                        "52.224.228.218"
+                    ]
+                }
+            ]
+        },
+        "customRoutes": {
+            "addressPrefixes": [
+                "10.0.2.0/24"
+            ]
+        },
+        "zones": "ZoneRedundant",
+        "publicIpAddresses": [
+            "52.224.228.218"
+        ],
+        "vpnGatewayGeneration": "Generation1",
+        "allowRemoteVnetTraffic": false,
+        "allowVirtualWanTraffic": false,
+        "vpnStack": "IPv4Only"
+    },
+    "etag": "W/\"16690b58-29aa-4f07-b58b-73e457e510ca\""
+}

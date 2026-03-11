@@ -1,0 +1,33 @@
+{
+    "apiVersion": "2025-02-01",
+    "id": "/subscriptions/c4b26665-24f0-4f98-b9db-8093f17be90b/resourceGroups/rg-sec-lab/providers/Microsoft.OperationalInsights/workspaces/la-security-workspace",
+    "name": "la-security-workspace",
+    "type": "microsoft.operationalinsights/workspaces",
+    "location": "eastus",
+    "tags": {},
+    "properties": {
+        "customerId": "0239b65f-495d-4e95-a5fa-464c8f10a9d5",
+        "provisioningState": "Succeeded",
+        "sku": {
+            "name": "pergb2018",
+            "lastSkuUpdate": "2026-03-06T10:27:51.4840203Z"
+        },
+        "retentionInDays": 30,
+        "features": {
+            "legacy": 0,
+            "searchVersion": 1,
+            "enableLogAccessUsingOnlyResourcePermissions": true,
+            "unifiedSentinelBillingOnly": true
+        },
+        "workspaceCapping": {
+            "dailyQuotaGb": -1,
+            "quotaNextResetTime": "2026-03-06T17:00:00Z",
+            "dataIngestionStatus": "RespectQuota"
+        },
+        "publicNetworkAccessForIngestion": "Enabled",
+        "publicNetworkAccessForQuery": "Enabled",
+        "createdDate": "2026-03-06T10:27:51.4840203Z",
+        "modifiedDate": "2026-03-06T10:28:04.0850518Z"
+    },
+    "etag": "\"4200dd60-0000-0100-0000-69aaac580000\""
+}
